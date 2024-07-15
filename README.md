@@ -1,5 +1,5 @@
 # Stepwise Verification and Remediation of Student Reasoning Errors with Large Language Model Tutors
-[![Arxiv](https://img.shields.io/badge/Arxiv-YYMM.NNNNN-red?style=flat-square&logo=arxiv&logoColor=white)]()
+[![Arxiv](https://img.shields.io/badge/Arxiv-2407.09136-red?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2407.09136)
 [![License](https://img.shields.io/github/license/UKPLab/ukp-project-template)](https://creativecommons.org/licenses/by/4.0/deed.en)
 [![Python Versions](https://img.shields.io/badge/Python-3.10-blue.svg?style=flat&logo=python&logoColor=white)](https://www.python.org/)
 
