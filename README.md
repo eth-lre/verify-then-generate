@@ -75,8 +75,13 @@ A detailed guide for evaluating various models will be published soon along the 
 
 ## Citation
 Please cite as:
-```
-Bibtex will be added shortly.
+```bibtex
+@article{daheim2024stepwise,
+  title={Stepwise Verification and Remediation of Student Reasoning Errors with Large Language Model Tutors},
+  author={Daheim, Nico and Macina, Jakub and Kapur, Manu and Gurevych, Iryna and Sachan, Mrinmaya},
+  journal={arXiv preprint arXiv:2407.09136},
+  year={2024}
+}
 ```
 
 ## Disclaimer
