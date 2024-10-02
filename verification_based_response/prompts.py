@@ -5,8 +5,8 @@ Problem: ${problem}
 [conversation]
 Teacher (maximum two sentences):"""
 
-#### Verification step - Baseline from Bridge
-VERIFY_REMATH_BASELINE = """You are an experienced elementary math teacher. Your task is to read a conversation snippet of a tutoring session between a student and tutor, and determine what type of error the student makes in the conversation. We have a list of common errors that students make in math, which you can pick from. We also give you the option to write in your own error type if none of the options apply.
+# Verification step - Baseline from Bridge
+VERIFY_BRIDGE_BASELINE = """You are an experienced elementary math teacher. Your task is to read a conversation snippet of a tutoring session between a student and tutor, and determine what type of error the student makes in the conversation. We have a list of common errors that students make in math, which you can pick from. We also give you the option to write in your own error type if none of the options apply.
 Error list:
 0. Student does not seem to understand or guessed the answer.
 1. Student misinterpreted the question.
@@ -37,7 +37,7 @@ Expected correct solution: ${solution}
 Q: Find the first error in the student solution compared to the expected correct solution and write a one line description. If no error, write "Student' solution is Correct".
 A:"""
 
-# Generation step
+# Generation step - same for all methods
 GENERATE_AFTER_VERIFICATION = """You are an experienced teacher and you are going to respond to a student. The problem your student is solving is on topic: ${lesson_topic}.
 Problem: ${problem}
 Assessment of student solution: ${assessment}

@@ -84,7 +84,7 @@ TASK_MAPPING = {
         baseline_prompt=DIRECT_GENERATION,
         joint_prompt="",
         two_step=TwoStepConfig(
-            verify_prompt=VERIFY_REMATH_BASELINE,
+            verify_prompt=VERIFY_BRIDGE_BASELINE,
             generate_prompt=GENERATE_AFTER_VERIFICATION,
         ),
         ground_truth_attribute="ground_truth_error_reason",
