@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stepwise Verification and Remediation of Student Reasoning Errors with Large Language Model Tutors</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; }
+        h1, h2, h3 { color: #333; }
+        a { color: #1a0dab; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        pre { background: #f4f4f4; padding: 10px; overflow-x: auto; }
+        code { font-family: monospace; }
+        .container { max-width: 800px; margin: auto; }
+        .badge img { margin-right: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Stepwise Verification and Remediation of Student Reasoning Errors with Large Language Model Tutors</h1>
+        <p>
+            <span class="badge">
+                <a href="https://arxiv.org/pdf/2407.09136">
+                    <img src="https://img.shields.io/badge/Arxiv-2407.09136-red?style=flat-square&logo=arxiv&logoColor=white" alt="Arxiv">
+                </a>
+                <a href="https://creativecommons.org/licenses/by/4.0/deed.en">
+                    <img src="https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg" alt="License">
+                </a>
+                <a href="https://www.python.org/">
+                    <img src="https://img.shields.io/badge/Python-3.10-blue.svg?style=flat&logo=python&logoColor=white" alt="Python Versions">
+                </a>
+            </span>
+        </p>
+        <p>
+            This repository contains dataset and code for the EMNLP 2024 paper <strong>"Stepwise Verification and Remediation of Student Reasoning Errors with Large Language Model Tutors"</strong>.
+        </p>
+
+        <h2>Abstract</h2>
+        <p>Large language models (LLMs) present an opportunity to scale high-quality personalized education to all...</p>
+
+        <h3>Contact Persons</h3>
+        <ul>
+            <li><a href="https://ndaheim.github.io/">Nico Daheim</a></li>
+            <li><a href="https://macina.sk/">Jakub Macina</a></li>
+        </ul>
+
+        <h3>Affiliations</h3>
+        <ul>
+            <li><a href="https://lre.inf.ethz.ch/">ETH-LRE</a></li>
+            <li><a href="https://ethz.ch/en.html">ETH Zurich</a></li>
+            <li><a href="https://www.ukp.tu-darmstadt.de/">UKP Lab</a></li>
+            <li><a href="https://www.tu-darmstadt.de/">TU Darmstadt</a></li>
+        </ul>
+
+        <img src="figure1.png" alt="Main Figure" width="100%">
+
+        <h2>Getting Started</h2>
+        <p>The code will be uploaded soon. Once available, install dependencies with:</p>
+        <pre><code>pip install -r requirements.txt</code></pre>
+
+        <h2>Dataset</h2>
+        <p>The dataset will be available in the <code>dataset</code> folder. It extends <a href="https://github.com/eth-nlped/mathdial">MathDial</a>.</p>
+
+        <h2>Running models & Evaluation</h2>
+        <h3>Verification</h3>
+        <pre><code>python verification/error_verification.py --setting overall_verification --model_name gpt3 --top_n_only 10</code></pre>
+
+        <h3>Verification-based Generation</h3>
+        <pre><code>python verification_based_response/main.py --model_name gpt3 --settings baseline --top_n_only 10</code></pre>
+
+        <h2>Citation</h2>
+        <pre><code>@inproceedings{daheim2024stepwise,
+  title={Stepwise Verification and Remediation of Student Reasoning Errors with Large Language Model Tutors},
+  author={Daheim, Nico and Macina, Jakub and Kapur, Manu and Gurevych, Iryna and Sachan, Mrinmaya},
+  booktitle = "Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing",
+  month = nov,
+  address = "Miami",
+  year="2024",
+  publisher = "Association for Computational Linguistics",
+}</code></pre>
+
+        <h2>License</h2>
+        <p>This work is licensed under a <a href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+    </div>
+</body>
+</html>
