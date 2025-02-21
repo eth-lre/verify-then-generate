@@ -13,6 +13,10 @@
         code { font-family: monospace; }
         .container { max-width: 800px; margin: auto; }
         .badge img { margin-right: 10px; }
+        .badge { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; }
+        .badge a { display: inline-flex; align-items: center; padding: 5px 10px; background: #333; color: white; border-radius: 20px; text-decoration: none; font-size: 14px; }
+        .badge a img { margin-right: 5px; }
+        .badge a .icon { font-size: 16px; margin-right: 5px; }
     </style>
 </head>
 <body>
@@ -22,6 +26,10 @@
             <span class="badge">
                 <a href="https://arxiv.org/pdf/2407.09136">
                     <img src="https://img.shields.io/badge/Arxiv-2407.09136-red?style=flat-square&logo=arxiv&logoColor=white" alt="Arxiv">
+                </a>
+              <a href="https://huggingface.co/datasets/eth-nlped/stepverify" target="_blank">
+                    <span class="icon">🤗</span>
+                    <span>Dataset</span>
                 </a>
                 <a href="https://creativecommons.org/licenses/by/4.0/deed.en">
                     <img src="https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg" alt="License">
@@ -36,7 +44,8 @@
         </p>
 
         <h2>Abstract</h2>
-        <p>Large language models (LLMs) present an opportunity to scale high-quality personalized education to all...</p>
+        <p>Large language models (LLMs) offer many opportunities to scale high-quality personalized tutoring. A promising approach is to build dialog tutoring models to scaffold students' problem-solving. However, even though existing models perform well in solving reasoning questions, they can struggle to precisely detect student`s errors and tailor their feedback to these errors. Inspired by real-world teaching practice where teachers identify student errors and customize their response based on them, we focus on verifying student solutions and show how grounding to such verification improves the overall quality of tutor response generation. We collect a dataset of 1,002 stepwise math reasoning chains with the first error step annotated by teachers. We show empirically that finding the mistake in a student solution is challenging for current models. We propose and evaluate several verifiers for detecting these errors. Using both automatic and human evaluation we show that the student solution verifiers steer the generation model towards highly targeted responses to student error which are more often correct with less hallucinations compared to existing baselines. The benchmark dataset and code will be released openly.</p>
+
 
         <h3>Contact Persons</h3>
         <ul>
@@ -69,14 +78,21 @@
         <pre><code>python verification_based_response/main.py --model_name gpt3 --settings baseline --top_n_only 10</code></pre>
 
         <h2>Citation</h2>
-        <pre><code>@inproceedings{daheim2024stepwise,
-  title={Stepwise Verification and Remediation of Student Reasoning Errors with Large Language Model Tutors},
-  author={Daheim, Nico and Macina, Jakub and Kapur, Manu and Gurevych, Iryna and Sachan, Mrinmaya},
-  booktitle = "Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing",
-  month = nov,
-  address = "Miami",
-  year="2024",
-  publisher = "Association for Computational Linguistics",
+        <pre><code>@inproceedings{daheim-etal-2024-stepwise,
+    title = "Stepwise Verification and Remediation of Student Reasoning Errors with Large Language Model Tutors",
+    author = "Daheim, Nico  and
+      Macina, Jakub  and
+      Kapur, Manu  and
+      Gurevych, Iryna  and
+      Sachan, Mrinmaya",
+    booktitle = "Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2024",
+    address = "Miami, Florida, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.emnlp-main.478/",
+    doi = "10.18653/v1/2024.emnlp-main.478",
+    pages = "8386--8411",
 }</code></pre>
 
         <h2>License</h2>

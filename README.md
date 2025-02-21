@@ -129,15 +129,23 @@ python verification_based_response/judge.py --model_outputs_json mathdial_gpt3_s
 ## Citation
 Please cite as:
 ```bibtex
-@inproceedings{daheim2024stepwise,
-  title={Stepwise Verification and Remediation of Student Reasoning Errors with Large Language Model Tutors},
-  author={Daheim, Nico and Macina, Jakub and Kapur, Manu and Gurevych, Iryna and Sachan, Mrinmaya},
-  booktitle = "Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing",
-  month = nov,
-  address = "Miami",
-  year="2024",
-  publisher = "Association for Computational Linguistics",
+@inproceedings{daheim-etal-2024-stepwise,
+    title = "Stepwise Verification and Remediation of Student Reasoning Errors with Large Language Model Tutors",
+    author = "Daheim, Nico  and
+      Macina, Jakub  and
+      Kapur, Manu  and
+      Gurevych, Iryna  and
+      Sachan, Mrinmaya",
+    booktitle = "Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2024",
+    address = "Miami, Florida, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.emnlp-main.478/",
+    doi = "10.18653/v1/2024.emnlp-main.478",
+    pages = "8386--8411",
 }
+
 ```
 
 ## License
