@@ -18,7 +18,7 @@ Contact Persons: [Nico Daheim](https://ndaheim.github.io/), [Jakub Macina](https
 
 ## Getting Started
 
-The code will be uploaded soon. Once uploaded, it will be possible to install all requirements by using: 
+Install all requirements by using: 
   ```
   pip install -r requirements.txt
   ```
